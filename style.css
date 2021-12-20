@@ -1,6 +1,243 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-	background: black; 
+body {/*fjerning af#FFF6E8 hvid ramme i kanterne+ farve*/
+	margin: 0;
+	background: #FFF6E8; 
+}
+a:hover{/*textfarve i menubjelke*/
+	color: greenyellow;
+}
+
+p:hover{/*textfarve i dropdown*/
+	color:coral;
+}
+
+p{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}	
+
+
+h2
+{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;}
+
+b{font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif" ;
+	
+}
+
+.header{
+	
+background-color:#FFC26D ;
+padding: 20px;
+font-size: 30px;
+font-display:block;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+
+}
+
+.header b{
+	color: white;
+}
+
+.navbar {/*orange bar*/
+  width: 100%;
+  background-color: coral;
+  overflow: auto;
+  height: 60px; 
+  font-size: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	
+	
+}
+
+/* Navbar links */
+.navbar a {/*text i menybar venstre*/
+  float: left;
+  display: inline; 
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: lightcoral;
+	
+}
+.navbar-right/* text til i menubar højer*/{
+  text-align: center;
+  float: right; 
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	position: relative;
+	right: -450px; 
+	
+}
+	
+.search {
+	margin-top: 5px; 
+	display: inline;
+	float: left; 
+}	
+
+
+
+
+/* Current/active navbar link */
+.active {
+display: inline;
+width: 20px;
+height: 20px;
+margin-left: 10px; 
+margin-right: 10px; 
+align-content: center; 
+}
+
+.active img {
+	align-content: center; 
+}
+
+/*blå*/
+.active0 {
+display: inline;
+background-color: cornflowerblue;
+width: 20px;
+height: 36px;
+margin-left: 10px; 
+margin-right: 10px;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+   
+  }
+}
+ 
+  
+
+
+	.shadow{/*inramning af menu bjelke*/
+	background-color: darkslategrey;
+	padding: 2px;
+		 box-shadow: 0px 10px 100px 0px rgba(0,0,0,0.5);
+		
+	}
+	
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;/* melemrum*/ 
+  text-align: center;/*lige melem billed og tekst*/
+}
+
+.dropdown img {
+	max-height: 80px;
+}
+
+.dropdown-content {/*gemte links*/
+  display: none;
+  position: absolute;
+  background-color: blanchedalmond;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+div.gallery {
+ 
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+background-color: aliceblue;
+	margin: 10px;
+	align-content: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+
+}
+
+div.desc {
+  padding: 12px;
+  text-align: left;
+}
+	
+div.desc-bold{/*melemrum*/
+
+
+}
+.pris{
+	text-align: right;
+	padding-right: 10px;
+	text-decoration-color: darkred
+	
+}
+	.text-titel{
+		text-align: center;
+		font-size: 30px;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	}
+	
+	.text{
+		text-align: center;
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	}
+
+.banner-gruppe1 {
+	margin-top: 100px;
+	display: inline; 
+	height: 500px; 
+	width: 33%; 
+}
+
+.banner-gruppe2 {
+	margin-top: 100px;
+	display: inline; 
+	height: 500px; 
+	width: 66%; 
+}
+
+.banner-gruppe3 {
+	display: inline; 
+	height: 500px; 
+	width: 33%; 
+	margin-bottom: 100px;
+}
+
+.banner-gruppe4 {
+	display: inline; 
+	height: 500px; 
+	width: 66%; 
+	margin-bottom: 100px;
 }
