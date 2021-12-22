@@ -38,9 +38,6 @@ font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",
 .header b{
 	color: white;
 }
-.link{
-	color: green;
-}
 
 .navbar {/*orange bar*/
   width: 100%;
@@ -109,7 +106,7 @@ align-content: center;
 /*blå*/
 .active0 {
 display: inline;
-background-color: cornflowerblue;
+background-color: #129BDB;
 width: 20px;
 height: 36px;
 margin-left: 10px; 
