@@ -38,6 +38,9 @@ font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",
 .header b{
 	color: white;
 }
+.link{
+	color: green;
+}
 
 .navbar {/*orange bar*/
   width: 100%;
@@ -76,7 +79,7 @@ font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed",
   font-size: 14px;
 font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	position: relative;
-	right: -450px; 
+	right: -450px; /*fikser posisins problem*/
 	
 }
 	
@@ -167,7 +170,7 @@ margin-right: 10px;
   display: block;
 }
 
-div.gallery {
+.gallery {
  
   border: 1px solid #ccc;
   float: left;
@@ -177,67 +180,100 @@ background-color: aliceblue;
 	align-content: center;
 }
 
-div.gallery:hover {
+.gallery:hover {
   border: 1px solid #777;
 }
 
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
 
 
 }
 
-div.desc {
+.desc {
   padding: 12px;
   text-align: left;
-}
+margin-bottom: 30px; 
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+
 	
-div.desc-bold{/*melemrum*/
-
-
 }
+
+	
+.desc-bold{/*melemrum over skrift*/
+padding:10px;
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	
+	
+}
+
+
+
 .pris{
 	text-align: right;
 	padding-right: 10px;
-	text-decoration-color: darkred
-	
+margin-bottom: -30px;	/*fjerner melemrum mellem priser og bund*/
 }
+
+
+.pris-r{
+	text-align: right;
+	padding-right: 10px;
+margin-bottom: -30px;	/*fjerner melemrum mellem priser og bund*/
+}
+.pris-r b{color: #C13662;}
+
+
 	.text-titel{
 		text-align: center;
 		font-size: 30px;
 		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+        padding-top: 400px;
+		padding-bottom: 50px;
 	}
+	
 	
 	.text{
 		text-align: center;
 		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+		padding-bottom: 50px;
+		margin-left: 300px;
+		margin-right: 300px;
+		
+		
 	}
 
-.banner-gruppe1 {
+.banner-gruppe1 {/*top venstre*/
 	margin-top: 100px;
 	display: inline; 
 	height: 500px; 
 	width: 33%; 
 }
 
-.banner-gruppe2 {
+.banner-gruppe2 {/*top hjrer*/
 	margin-top: 100px;
 	display: inline; 
 	height: 500px; 
 	width: 66%; 
 }
 
-.banner-gruppe3 {
+.banner-gruppe3 {/*bund højre*/
 	display: inline; 
 	height: 500px; 
 	width: 33%; 
 	margin-bottom: 100px;
 }
 
-.banner-gruppe4 {
+.banner-gruppe4 {/*bund venstre*/
 	display: inline; 
 	height: 500px; 
 	width: 66%; 
 	margin-bottom: 100px;
 }
+
+
+
+
+
+
